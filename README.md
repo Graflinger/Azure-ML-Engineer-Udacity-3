@@ -25,11 +25,16 @@ The dataset got uploaded as a registered dataset.
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+A Random forest was chosen as model, because it performs great on task like this and has a lot of hyperparameters, so you can take benefit of hyperdrive.
 
+The 3 picked hyperparameters are: 
+- n_estimator (defines how many desicion trees are being used)
+- criterion (the function to measure the quality of a split) 
+- max depth (defines the max depth of any given tree in the forest)
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+The best run resulted in a accuracy of: #### using n_estimator = , criterion = and max_depth = 
+To improve the performance more runs and a greater set of predefined hyperparameters could be used.
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
