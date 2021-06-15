@@ -18,17 +18,17 @@ The dataset got uploaded as a registered dataset.
 
 ## Automated ML
 AutoML run configuration
-![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
+![AutoML Config](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/bc4e283e67a3f0c7aa84c6ce48e8e08a6d959d66/pictures/automlconfig.PNG)
 
 ### Results
 The auto ml run resulted in a Voting Ensebmle as the best model. Its parameters are shown in the screenshots below. 
 How to improve even further: The automl run could have benefited from a longer running duration or better performing compute clusters.
 
 Run details of the auto ml run
-![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
+![Run Details](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/bc4e283e67a3f0c7aa84c6ce48e8e08a6d959d66/pictures/RunDetailsAutobestmodel.PNG)
 
 Parameters of the best model
-![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/bc4e283e67a3f0c7aa84c6ce48e8e08a6d959d66/pictures/votingensebmleparameters.PNG)
 
 ## Hyperparameter Tuning
 A Random forest was chosen as model, because it performs great on task like this and has a lot of hyperparameters, so you can take benefit of hyperdrive.
@@ -43,16 +43,16 @@ The best run resulted in a accuracy of: 0.84615385 using n_estimator = 64 , crit
 To improve the performance more runs and a greater set of predefined hyperparameters could be used.
 
 Run Detail of Hyperparameter run
-![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/bc4e283e67a3f0c7aa84c6ce48e8e08a6d959d66/pictures/RunDetailsHyper.PNG)
 
 Best model with its hyperparameters
-![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/bc4e283e67a3f0c7aa84c6ce48e8e08a6d959d66/pictures/hyperdriverundetails2.PNG)
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Model Deployment
 To Query a the endpoint you can use the same code as in this screenshot:
-![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/bc4e283e67a3f0c7aa84c6ce48e8e08a6d959d66/pictures/Calling%20Endpoint.PNG)
 
 Just provide a array with all the information needed. (10 variables in the same order like the in the dataset)
 ## Screen Recording
