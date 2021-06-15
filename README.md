@@ -17,10 +17,12 @@ The task is to predict wether a water bodie is safe for consumption or not.
 The dataset got uploaded as a registered dataset.
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+AutoML run configuration
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
+The auto ml run resulted in a Voting Ensebmle as the best model. Its parameters are shown in the screenshots below. 
+How to improve even further: The automl run could have benefited from a longer running duration or better performing compute clusters.
 
 Run details of the auto ml run
 ![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
