@@ -14,7 +14,11 @@ Its content is about quality metrics for different water bodies. These are label
 The task is to predict wether a water bodie is safe for consumption or not.
 
 ### Access
-The dataset got uploaded as a registered dataset.
+The dataset is retrieved from my github repository using Tabular dataset 
+```python
+data_source = "https://raw.githubusercontent.com/Graflinger/Azure-ML-Engineer-Udacity-3/main/water_potability.csv"
+ds = TabularDatasetFactory.from_delimited_files(path=data_source)
+```
 
 ## Automated ML
 AutoML run configuration
@@ -29,6 +33,12 @@ Run details of the auto ml run
 
 Parameters of the best model
 ![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/bc4e283e67a3f0c7aa84c6ce48e8e08a6d959d66/pictures/votingensebmleparameters.PNG)
+
+Id of best run
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/c63c0432eb5651dba1b4d18c01b8f10e4c27fbff/pictures/autoorintbestrun.PNG)
+
+Details fitted model
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/c63c0432eb5651dba1b4d18c01b8f10e4c27fbff/pictures/autoprintfittedmodel.PNG)
 
 ## Hyperparameter Tuning
 A Random forest was chosen as model, because it performs great on task like this and has a lot of hyperparameters, so you can take benefit of hyperdrive.
@@ -48,11 +58,18 @@ Run Detail of Hyperparameter run
 Best model with its hyperparameters
 ![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/bc4e283e67a3f0c7aa84c6ce48e8e08a6d959d66/pictures/hyperdriverundetails2.PNG)
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-
 ## Model Deployment
+The best model was done by the hyperdrive run, so this is used for the endpoint deployment.
+The enviroment used is defined in the dependencies.yml file.
+
+The first model of the following list is the best model used for this deployment with its hyperparameters
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/c63c0432eb5651dba1b4d18c01b8f10e4c27fbff/pictures/hyperdriverundetails2.PNG)
+
 To Query a the endpoint you can use the same code as in this screenshot:
 ![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/bc4e283e67a3f0c7aa84c6ce48e8e08a6d959d66/pictures/Calling%20Endpoint.PNG)
+
+Active/Healthy Endpoint
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/c63c0432eb5651dba1b4d18c01b8f10e4c27fbff/pictures/Endpointdetails.PNG)
 
 Just provide a array with all the information needed. (10 variables in the same order like the in the dataset)
 As you can see, the output is 0, so this test data concludes into a non drinkable water quality.
