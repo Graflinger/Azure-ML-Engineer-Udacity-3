@@ -55,6 +55,7 @@ To Query a the endpoint you can use the same code as in this screenshot:
 ![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-3/blob/bc4e283e67a3f0c7aa84c6ce48e8e08a6d959d66/pictures/Calling%20Endpoint.PNG)
 
 Just provide a array with all the information needed. (10 variables in the same order like the in the dataset)
+As you can see, the output is 0, so this test data concludes into a non drinkable water quality.
 ## Screen Recording
 link for the screencast
 
