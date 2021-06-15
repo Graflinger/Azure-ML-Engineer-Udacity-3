@@ -22,7 +22,11 @@ The dataset got uploaded as a registered dataset.
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+Run details of the auto ml run
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
+
+Parameters of the best model
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
 
 ## Hyperparameter Tuning
 A Random forest was chosen as model, because it performs great on task like this and has a lot of hyperparameters, so you can take benefit of hyperdrive.
@@ -33,19 +37,23 @@ The 3 picked hyperparameters are:
 - max depth (defines the max depth of any given tree in the forest)
 
 ### Results
-The best run resulted in a accuracy of: #### using n_estimator = , criterion = and max_depth = 
+The best run resulted in a accuracy of: 0.84615385 using n_estimator = 64 , criterion = "gini" and max_depth = 16
 To improve the performance more runs and a greater set of predefined hyperparameters could be used.
+
+Run Detail of Hyperparameter run
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
+
+Best model with its hyperparameters
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+To Query a the endpoint you can use the same code as in this screenshot:
+![Registered Datasets](https://github.com/Graflinger/Azure-ML-Engineer-Udacity-2/blob/d2b21350ca3d342efddf8bf79b42dcbb2bd6ccf0/Screenshots/2_RegisteredDatasets.PNG)
 
+Just provide a array with all the information needed. (10 variables in the same order like the in the dataset)
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+link for the screencast
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+https://youtu.be/t4dWBNhtDqw
